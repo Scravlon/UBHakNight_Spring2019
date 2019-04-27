@@ -10,8 +10,8 @@ import java.util.List;
 
 public class delActivity extends AppCompatActivity {
 
-    List<Items> deliveries;
-    int numTrips;
+    List<Items> deliveries;  //list of delivered items
+    int numTrips;           //number of trips finished
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,7 +12,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
+        <ImageView
+            android:id="@+id/imageView_logo1"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:padding="50px"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
         android:id="@+id/text_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +59,7 @@
         android:layout_gravity="center"
         android:gravity="clip_horizontal|center"
         android:text="Login" />
+
     </LinearLayout>
 
 

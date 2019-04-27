@@ -15,7 +15,8 @@
         <ImageView
             android:id="@+id/imageView_logo1"
             android:layout_width="match_parent"
-            android:layout_height="162dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="100dp"
             android:padding="50px"
             app:srcCompat="@drawable/logo1" />
 
@@ -23,7 +24,6 @@
         android:id="@+id/text_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:gravity="center"
         android:text="Login"
         android:textColor="#FFFFFF"

@@ -26,8 +26,10 @@ public class requestItem {
         loc = location;
     }
 
-    public void addItem(String str, String remark,int i){
-        Items item = new Items(str,remark,i);
-        listItem.add(item);
+    public void updateItemList(ArrayList<Items> alItem){
+        listItem = alItem;
+    }
+    public void addItem(Items i){
+        listItem.add(i);
     }
 }

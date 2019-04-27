@@ -8,4 +8,53 @@
     tools:context=".delActivity"
     tools:showIn="@layout/activity_del">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView_earning"
+            android:layout_width="329dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Your Earnings:"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView6_money"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="$ 15.5"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You delivered:"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView_trips"
+            android:layout_width="165dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="# Trips"
+            android:textSize="50sp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

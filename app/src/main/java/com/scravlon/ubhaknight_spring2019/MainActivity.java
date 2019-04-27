@@ -16,19 +16,19 @@ public class MainActivity extends AppCompatActivity {
 
     static final int MY_PERMISSIONS_REQUEST_COARSE_LOCATION = 99;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-        /*For simplicity, force user number and password as followings*/
-        final String loginNumber = "kokhaoyo";
-        final String password = "kokhaoyo";
-        final String loginName = "edwinhun";
-        final String loginPassword = "edwinhun";
+            /*For simplicity, force user number and password as followings*/
+            final String loginNumber = "kokhaoyo";
+            final String password = "kokhaoyo";
+            final String loginName = "edwinhun";
+            final String loginPassword = "edwinhun";
 
 
-        final EditText editnumber = findViewById(R.id.edit_number);
+            final EditText editnumber = findViewById(R.id.edit_number);
         final EditText editpass = findViewById(R.id.edit_password);
         Button butLogin = findViewById(R.id.but_login);
         requestLocationService();

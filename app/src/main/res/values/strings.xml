@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UBHakNight_Spring2019</string>
+    <string name="title_activity_req">reqActivity</string>
+    <string name="title_activity_del">delActivity</string>
+</resources>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".delReqActivity">
+    tools:context=".delReqActivity"
+    android:background="#6699BB">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,6 +29,14 @@
             android:layout_gravity="center"
             android:width="150dp"
             android:text="Deliver" />
+
+        <Button
+            android:id="@+id/but_takeReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:width="150dp"
+            android:text="Take request" />
 
     </LinearLayout>
 

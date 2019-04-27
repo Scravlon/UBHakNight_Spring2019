@@ -16,6 +16,7 @@ public class delReqActivity extends AppCompatActivity {
         setContentView(R.layout.activity_del_req);
         Button but_deliver = findViewById(R.id.but_deliver);
         Button but_request = findViewById(R.id.but_request);
+        Button but_takeReq = findViewById(R.id.but_takeReq);
         getExtra();
        // Log.d("tester","asdsa");
         but_deliver.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +34,14 @@ public class delReqActivity extends AppCompatActivity {
                 intent.putExtra("loginUser", loginUser);
                 startActivity(intent);
 
+            }
+        });
+
+        but_takeReq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),takeReqActivity.class);
+                startActivity(intent);
             }
         });
     }

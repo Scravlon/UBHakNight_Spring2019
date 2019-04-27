@@ -8,4 +8,124 @@
     tools:context=".reqActivity"
     tools:showIn="@layout/activity_req">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Item:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_itemName"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:inputType="number"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/but_inc"
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/but_dec"
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Remark"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/but_addItem"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/but_finish"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="Done" />
+
+                <Button
+                    android:id="@+id/but_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Location" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+    </TableLayout>
 </android.support.constraint.ConstraintLayout>

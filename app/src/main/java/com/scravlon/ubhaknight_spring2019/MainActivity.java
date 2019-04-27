@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String userpass = editpass.getText().toString();
                 if((usernumber.equals(loginNumber) && userpass.equals(password)) || (usernumber.equals(loginName) && userpass.equals(loginPassword))){
                     Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
-                    changeIntent();
+                    changeIntent(usernumber);
                 } else{
                     Toast.makeText(MainActivity.this, "Wrong credential!", Toast.LENGTH_SHORT).show();
                 }
@@ -92,8 +92,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Update the activity to the sub Main activity
      */
-    private void changeIntent(){
+    private void changeIntent(String in){
         Intent intent = new Intent(this,delReqActivity.class);
+        intent.putExtra("loginUser", in);
         startActivity(intent);
         finish();
     }
